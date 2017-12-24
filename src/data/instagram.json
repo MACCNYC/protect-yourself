@@ -1,0 +1,50 @@
+{
+    "start": {
+        "description": "Instagram. The social media site leading to the downfall of modern society by bringing us unicorn everything. Except for fully automated luxury unicorn anarchism.",
+        "nextSteps": [
+            {
+                "prompt": "Wow so how can instagram be bad and how can I avert disaster?",
+                "step": "instagram"
+            },
+            {
+                "prompt": "Whatever I don't have instagram. Leave me alone",
+                "step": "aww"
+            }
+        ]
+    },
+    "instagram": {
+        "description": "It turns out that a steady stream of beautiful images of the places you go to and the things you see can be a pretty good way for people to find out where you are. We had a friend whose stalker tracked them across multiple states to their workplace from seeing an instagram post with the sign in the background. Jeez, right? <br> A good way to avoid this happening is to make your instagram private. To do that, you can go to your profile, select the button for more options, and turn on 'Private Account'. Now you have to individually approve people. Protip: never approve the fash.",
+        "nextSteps": [
+            {
+                "prompt": "Cool, I set my instagram to private!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I like to live life on the edge and so do my friends, thx tho. Anyway not sharing my brunches with everyone would be wrong.",
+                "step": "aww"
+            }
+        ]
+    },
+    "yay": {
+        "description": "You protected your instagram profile!",
+        "action": {
+            "type": "award",
+            "tweet": "I protected my instagram profile!"
+        },
+        "nextSteps": [
+            {
+                "prompt": "I want to do something else now!",
+                "restart": "true"
+            }
+        ]
+    },
+    "aww": {
+        "description": "You didn't do the thing",
+        "nextSteps": [
+            {
+                "prompt": "bye",
+                "restart": "true"
+            }
+        ]
+    }
+}

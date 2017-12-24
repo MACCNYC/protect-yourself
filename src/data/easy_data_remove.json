@@ -1,0 +1,34 @@
+{
+    "start": {
+        "type": "menu",
+        "title": "Remove your info from data brokers",
+        "description": "It should take under a couple hours to remove your information from all of these sites, and they don't require ID or faxing to do it.",
+        "topics": [{
+            "goals": ["Addresses", "Archives", "BeenVerified", "Intelius",
+                "PeekYou", "PeopleFinders", "PeopleLookup", "PeopleSmart",
+                "Spokeo", "TruthFinder", "Whitepages"]
+        }]
+    },
+    "yay": {
+        "description": "You did the thing!",
+        "action": {
+            "type": "award",
+            "tweet": "A thing to tweet"
+        },
+        "nextSteps": [
+            {
+                "prompt": "I want to do something else now!",
+                "restart": "true"
+            }
+        ]
+    },
+    "aww": {
+        "description": "You didn't do the thing",
+        "nextSteps": [
+            {
+                "prompt": "bye",
+                "restart": "true"
+            }
+        ]
+    }
+}

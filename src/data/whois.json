@@ -1,0 +1,63 @@
+{
+    "start": {
+        "description": "Do you run any websites? If you do, the information you entered when registering your website could be really helpful to your doxxers, and you don't want that!",
+        "nextSteps": [
+            {
+                "prompt": "OK cool, how do I protect myself?",
+                "step": "whois"
+            },
+            {
+                "prompt": "I don't have a website",
+                "step": "ok"
+            },
+            {
+                "prompt": "I have a website, but I don't feel like doing this now.",
+                "step": "aww"
+            }
+        ]
+    },
+    "whois": {
+        "description": "OK cool. We want to make sure your personal information isn't available from your website, because that could suck. You can see what information is associated with your site by going to <a href='https://whois.icann.org/en'>this whois lookup site</a> and seeing what information is there. If it's your personal info, you should visit your domain registrar (the site you bought your domain from) and see if you can buy whois protection. Often, it's free. Whois protection will mean there's a bunch of corporate nonsense instead of your personal info. If it's not available, you can enter your own nonsense.",
+        "nextSteps": [
+            {
+                "prompt": "OK cool, whois protection is ON!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I don't have my credentials now, and this seems like too much work",
+                "step": "aww"
+            }
+        ]
+    },
+    "yay": {
+        "description": "You did the thing!",
+        "action": {
+            "type": "award",
+            "tweet": "A thing to tweet"
+        },
+        "nextSteps": [
+            {
+                "prompt": "I want to do something else now!",
+                "restart": "true"
+            }
+        ]
+    },
+    "ok": {
+        "description": "Cool, you don't have a website. If you ever make one, be sure to turn on whois protection. You can check back here if you need help with that!",
+        "nextSteps": [
+            {
+                "prompt": "OK, I will",
+                "step": "yay"
+            }
+        ]
+    },
+    "aww": {
+        "description": "You didn't do the thing",
+        "nextSteps": [
+            {
+                "prompt": "bye",
+                "restart": "true"
+            }
+        ]
+    }
+}

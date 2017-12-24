@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+}
+
+h1,h2,h3 {
+    font-family: monospace;
+    color: #717171;
+    margin-bottom: 0;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+a {
+  color: #fb0000;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+ul {
+  text-align: initial;
+  list-style-type: none;
+}
+
+li:before {
+  content: "\1F496";
+  margin-left: -2em;
+  padding-right: 1em;
+  padding-bottom: 2px;
+  vertical-align: text-top;
+}
+
+.subgoals {
+  display: flex;
+  flex-wrap: wrap;
+}
+.subgoals div {
+  flex: 1;
+}
+.subgoals p {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.subgoals .check {
+    position: absolute;
+    top: 18%;
+    left: 38%;
+    font-size: 70px;
+    color: red;
+}
+
+button {
+  color: #366500;
+  background: none;
+  border: none;
+  border-bottom: solid 2px #717171;
+  margin: 6px;
+  padding: 4px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.subgoals p:hover button,
+button:hover,
+button:focus {
+  outline: none;
+  border-bottom-width: 5px;
+  padding-bottom: 1px;
+}
+
+footer {
+  font-size: .8em;
+  padding-top: 20px;
+}
+
+.navigation {
+  padding-top: 2em;
+  display: flex;
+}
+
+.navigation a {
+  flex-grow: 1;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  button {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+  }
+}
+

@@ -1,0 +1,75 @@
+{
+    "google": {
+        "title": "Google yourself",
+        "badge": "google.gif"
+    },
+    "whois": {
+        "title": "WHOIS protection",
+        "badge": "whois.gif"
+    },
+    "facebook": {
+        "title": "Facebook",
+        "badge": "facebook.gif"
+    },
+    "twitter": {
+        "title": "Twitter",
+        "badge": "twitter.gif"
+    },
+    "instagram": {
+        "title": "Instagram",
+        "badge": "instagram.gif"
+    },
+    "other_social_media": {
+        "title": "More"
+    },
+    "tor": {
+        "title": "Secure Browsing",
+        "badge": "tor.gif"
+    },
+    "vpn": {
+        "title": "VPN"
+    },
+    "easy_data_remove": {
+        "title": "Data Brokers",
+        "badge": "data_remove.gif"
+    },
+    "advanced_data_remove": {
+        "title": "Advanced"
+    },
+    "Addresses": {
+        "title": "Addresses"
+    },
+    "Archives": {
+        "title": "Archives"
+    },
+    "BeenVerified": {
+        "title": "BeenVerified"
+    },
+    "Intelius": {
+        "title": "Intelius"
+    },
+    "PeekYou": {
+        "title": "PeekYou"
+    },
+    "PeopleFinders": {
+        "title": "PeopleFinders"
+    },
+    "PeopleLookup": {
+        "title": "PeopleLookup"
+    },
+    "PeopleSmart": {
+        "title": "PeopleSmart"
+    },
+    "Spokeo": {
+        "title": "Spokeo"
+    },
+    "TruthFinder": {
+        "title": "TruthFinder"
+    },
+    "Whitepages": {
+        "title": "Whitepages"
+    },
+    "UsaPeopleSearch": {
+        "title": "UsaPeopleSearch"
+    }
+}

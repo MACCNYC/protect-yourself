@@ -1,0 +1,73 @@
+{
+    "start": {
+        "title": "Ready to protect yourself from doxxing?",
+        "nextSteps": [
+            {
+                "prompt": "What's... 'doxxing'?",
+                "step": "whatis"
+            },
+            {
+                "prompt": "Yeah, let's do it!",
+                "step": "mainMenu"
+            },
+            {
+                "prompt": "Pff, I'm not worried about Doxxing.",
+                "step": "learnMore"
+            }
+        ]
+    },
+    "whatis": {
+        "title": "We're glad you asked",
+        "description": "Doxxing is when someone takes your personal information, and posts it publicly online. That information could be your address, phone number, date of birth, or anything else that would allow people to find or harass you.",
+        "nextSteps": [
+            {
+                "prompt": "Oh no, I don't want that to happen.",
+                "step": "whatis2"
+            },
+            {
+                "prompt": "That doesn't sound so bad.",
+                "step": "learnMore"
+            }
+        ]
+    },
+    "whatis2": {
+        "title": "We don't either!",
+        "nextSteps": [
+            {
+                "prompt": "Sweet, I'm ready to learn how to protect myself!",
+                "step": "mainMenu"
+            }
+        ]
+    },
+    "learnMore": {
+        "title": "Why should I care about doxxing",
+        "description": "Lots of reasons. Being doxxed can be stressful, and not just for you. It impacts your friends, families, and loved ones. People who are doxxed receive harassment and sometimes their families do too. Also, often the same steps that keep our communities safe from doxxing also keep us safe from state repression.",
+        "nextSteps": [
+            {
+                "prompt": "Ugh ok, I'm ready to learn how to protect myself.",
+                "step": "mainMenu"
+            }
+        ]
+    },
+    "mainMenu": {
+        "type": "menu",
+        "title": "How do you want to protect yourself?",
+        "topics": [
+            {
+                "title": "Audit yourself",
+                "description": "What would you do if you were the doxxer?",
+                "goals": ["google", "whois"]
+            },
+            {
+                "title": "Lock down your social media",
+                "description": "Protect yourself and your friends",
+                "goals": ["facebook", "twitter", "instagram"]
+            },
+            {
+                "title": "Advanced",
+                "description": "Take yourself down from data brokers, and if you're researching the enemy, don't let them know who you are",
+                "goals": ["easy_data_remove", "tor"]
+            }
+        ]
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "start": {
+        "description": "OK, so you want to get off of this website. First, let's see if you're on it. Go to <a href='http://www.addresses.com/'>Addresses.com</a> and look for yourself",
+        "nextSteps": [
+            {
+                "prompt": "Oh no I found myself",
+                "step": "removeyourself"
+            },
+            {
+                "prompt": "Yay, I'm not there",
+                "step": "yay"
+            }
+        ]
+    },
+     "removeyourself": {
+        "description": "Go to <a href='http://www.addresses.com/optout.php'>Addresses.com opt out</a> and opt out",
+        "nextSteps": [
+            {
+                "prompt": "Yay, it worked",
+                "step": "yay"
+            },
+            {
+                "prompt": "It didn't work, I'll come back to this later",
+                "step": "aww"
+            }
+        ]
+    },
+    "yay": {
+        "description": "You are not on addresses.com!",
+        "action": {
+            "type": "award",
+            "tweet": "I got a merit badge protecting my identity!"
+        },
+        "nextSteps": [
+            {
+                "prompt": "Work on another site",
+                "goal": "advanced_data_remove"
+            }
+        ]
+    },
+    "aww": {
+        "description": "Maybe come back and try to take yourself off the site some other time.",
+        "nextSteps": [
+            {
+                "prompt": "bye",
+                "goal": "advanced_data_remove"
+            }
+        ]
+    }
+}

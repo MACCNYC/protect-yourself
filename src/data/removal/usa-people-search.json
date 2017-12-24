@@ -1,0 +1,50 @@
+{
+    "start": {
+        "description": "OK, so you want to get off of this website. First, let's see if you're on it. Go to <a href='https://www.usa-people-search.com/'>USA People Search.com</a> and look for yourself",
+        "nextSteps": [
+            {
+                "prompt": "Oh no I found myself",
+                "step": "removeyourself"
+            },
+            {
+                "prompt": "Yay, I'm not there",
+                "step": "yay"
+            }
+        ]
+    },
+     "removeyourself": {
+        "description": "Go to <a href='https://www.usa-people-search.com/manage/t'>USA People Search.com opt out</a> and opt out",
+        "nextSteps": [
+            {
+                "prompt": "Yay, it worked",
+                "step": "yay"
+            },
+            {
+                "prompt": "It didn't work, I'll come back to this later",
+                "step": "aww"
+            }
+        ]
+    },
+    "yay": {
+        "description": "You are not on USA People Search.com!",
+        "action": {
+            "type": "award",
+            "tweet": "I got a merit badge protecting my identity! pic.twitter.com/9VXkpZNclf Check out http://cutealism.com/fight"
+        },
+        "nextSteps": [
+            {
+                "prompt": "Work on another site",
+                "goal": "advanced_data_remove"
+            }
+        ]
+    },
+    "aww": {
+        "description": "Maybe come back and try to take yourself off the site some other time.",
+        "nextSteps": [
+            {
+                "prompt": "bye",
+                "goal": "advanced_data_remove"
+            }
+        ]
+    }
+}

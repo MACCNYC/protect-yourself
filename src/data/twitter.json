@@ -1,0 +1,50 @@
+{
+    "start": {
+        "description": "Ah, Twitter. Such a reputation you have. You like to see yourself as an enabler and leader of revoltions worldwide, but a lot of folks just see you as a vehicle for creepy harassment. In my life you're a vehicle for social commentary that thinks it's more cutting than it is. But twitter is definitely a tool your enemies can use to harass and even locate you.",
+        "nextSteps": [
+            {
+                "prompt": "Cool, let's lock it down!",
+                "step": "twitter"
+            },
+            {
+                "prompt": "I don't have a twitter, or I don't care to secure my account.",
+                "step": "aww"
+            }
+        ]
+    },
+    "twitter": {
+        "description": "Cool, you're interested in securing your twitter profile. Wise! This means you can tweet with less fear of harassment. It's also worth practicing shutting it down now, and then if you experience a sudden wave of harassment you can shut down your account temporarily (this is a common practice). <br> To make your twitter account private, go to your account settings on twitter.com, and select the security and privacy section. ",
+        "nextSteps": [
+            {
+                "prompt": "Cool, I set my twitter to private!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I like to live life on the edge, and I also don't mind tweeting in a way that keeps myself and my friends info private to the extent I can.",
+                "step": "aww"
+            }
+        ]
+    },
+    "yay": {
+        "description": "You did the thing!",
+        "action": {
+            "type": "award",
+            "tweet": "A thing to tweet"
+        },
+        "nextSteps": [
+            {
+                "prompt": "I want to do something else now!",
+                "restart": "true"
+            }
+        ]
+    },
+    "aww": {
+        "description": "You didn't lock down your twitter profile, but hopefully you'll exercise discretion!",
+        "nextSteps": [
+            {
+                "prompt": "bye",
+                "restart": "true"
+            }
+        ]
+    }
+}

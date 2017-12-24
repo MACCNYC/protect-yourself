@@ -1,0 +1,224 @@
+{
+    "start": {
+        "description": "Facebook knows allllll about you, and anyone you're connected to on Facebook might know a lot about you too. To get your information safe, it's a good idea to double check your privacy and security setting.",
+        "nextSteps": [
+            {
+                "prompt": "Totally, let's do it!",
+                "step": "privacy_checkup"
+            },
+            {
+                "prompt": "Whatever, I don't even HAVE a Facebook.",
+                "step": "no_facebook"
+            },
+            {
+                "prompt": "I'm cool with everyone seeing everything I post all the time.",
+                "step": "aww"
+            }
+        ]
+    },
+    "no_facebook": {
+        "description": "Really no Facebook? You're all set then!",
+        "nextSteps": [
+            {
+                "prompt": "Cool :)",
+                "restart": "true"
+            },
+            {
+                "prompt": "Wait, no I have one. I was joking.",
+                "step": "privacy_checkup"
+            }
+        ]
+    },
+    "privacy_checkup": {
+        "description": "First things first, checkout Facebook's quick 'Privacy Checkup.' It will walk you through who can see your future post, and your basic contact information.",
+        "nextSteps": [
+            {
+                "prompt": "Sounds cool, where do I find it?",
+                "step": "privacy_checkup_2"
+            }
+        ]
+    },
+    "privacy_checkup_2": {
+        "description": "You'll find it under the '?' menu! </br><img src='/images/facebook1.png' />",
+        "nextSteps": [
+            {
+                "prompt": "Found it!",
+                "step": "privacy_checkup_3"
+            }
+        ]
+    },
+    "privacy_checkup_3": {
+        "description": "Sweet! We recommend sharing your email, phone, and birthday with either 'Only me' or your 'Close friends.' If someone is able to find out your birthday, email etc, it's easier for them to find other information about you.",
+        "nextSteps": [
+            {
+                "prompt": "I did the check up! My info is private af now.",
+                "step": "view_as"
+            },
+            {
+                "prompt": "How do they know who my 'Close friends' are?",
+                "step": "close_friends"
+            }
+        ]
+    },
+    "close_friends": {
+        "description": "Good question! You can audit your close friends by looking for 'Friend Lists' in the left column of your news feed, then look for your 'Close Friends' list. You can also set someone as a close friend or not on their profile: <br/> <img src='images/closefriends.png'>",
+        "nextSteps": [
+            {
+                "prompt": "Good to know!",
+                "step": "privacy_checkup_3"
+            }
+        ]
+    },
+    "view_as": {
+        "description": "Awesome, the next thing to do is review what the public can see on your profile. Head to your profile page and look for the 'View as' option in the '...' menu. This will show you what your profile looks to the public.",
+        "nextSteps": [
+            {
+                "prompt": "Got it.",
+                "step": "view_as2"
+            }
+        ]
+    },
+    "view_as2": {
+        "description": "Click around and make sure there's nothing you don't want ANYONE to be able to see. There's all kinds of stuff hidden around here, so make sure you check all the subsections of your profile. Here's a convenient list so you can check them all off!",
+        "subtasks": [ "About", "Friends", "Photos", "Videos", "Check-Ins", "Music", "Events", "Reviews", "Groups", "Notes" ],
+        "nextSteps": [
+            {
+                "prompt": "I checked them! And everything looked ok!!",
+                "step": "yay"
+            },
+            {
+                "prompt": "omg people could see all this???",
+                "step": "remove"
+            }
+        ]
+    },
+    "remove": {
+        "description": "So you found something you don't want there, don't panic! You can take it down! You'll need to exit 'View as' mode for some of this. Try opening your normal profile in one tab while keeping the 'View as' version open in another. <br/><br/>What do you want to remove?",
+        "nextSteps": [
+            {
+                "prompt": "A Photo, Post or Video",
+                "step": "remove_photo"
+            },
+            {
+                "prompt": "A Group",
+                "step": "remove_group"
+            },
+            {
+                "prompt": "Stuff 'About' me",
+                "step": "remove_about"
+            },
+            {
+                "prompt": "My Friends are showing 😱",
+                "step": "hide_friends"
+            }
+        ]
+    },
+    "remove_photo": {
+        "description": "You can either change who can view this, or you can delete it completely! What's your preference?",
+        "nextSteps": [
+            {
+                "prompt": "Delete! No one should see this.",
+                "step": "delete_photo"
+            },
+            {
+                "prompt": "I'm ok with some people seeing this, just not the public!",
+                "step": "hide_photo"
+            }
+        ]
+    },
+    "hide_photo": {
+        "description": "To change who can see it, view the photo, post or video, and look for the little globe next to the date it was posted: <br/><img src='images/public_image.png' /> </br> You'll see a bunch of options! Pick one that's not public, or maybe is just yourself... It's up to you!",
+        "nextSteps": [
+            {
+                "prompt": "Phew, everything is hidden!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I need to remove something else.",
+                "step": "remove"
+            },
+            {
+                "prompt": "I want to delete this instead.",
+                "step": "delete_photo"
+            }
+        ]
+    },
+    "delete_photo": {
+        "description": "For a photo or video, look for 'Options' when you mouse over it. Then click 'Delete This Photo' (or 'Video): </br><img src='images/delete_image.png' /> </br> For a post look for the little arrow menu on the top right of the post, you'll find 'Delete' in there. <img src='images/delete_post.png' />",
+        "nextSteps": [
+            {
+                "prompt": "Phew, everything is deleted!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I need to remove something else.",
+                "step": "remove"
+            },
+            {
+                "prompt": "I want to hide this instead.",
+                "step": "hide_photo"
+            }
+        ]
+    },
+    "remove_group": {
+        "description": "Groups are tricky. If it's a public group there's no way to hide that you're in the group completely. If it's a group you or your friends run, think about making it private or secret! What you can do for your profile though, it remove the 'Groups' section. Under 'More' you'll find 'Manage Sections' where you can un-check 'Groups' (and any other sections you want to hide: <br><img src='images/manage_sections.png' />",
+        "nextSteps": [
+            {
+                "prompt": "Phew, everything is gone now!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I need to remove something else.",
+                "step": "remove"
+            }
+        ]
+    },
+    "remove_about": {
+        "description": "There's a whole lot of information here! Next to most of it you should see an 'Edit' button. Once you're editing it you'll see a privacy drop down you've prob seen a bunch at this point: <br><img src='images/privacy_dropdown.png'>",
+        "nextSteps": [
+            {
+                "prompt": "Phew, everything is gone now!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I need to remove something else.",
+                "step": "remove"
+            }
+        ]
+    },
+    "hide_friends": {
+        "description": "So you don't want everyone in the world to know who you know and who knows you? We get it. You'll want to find 'Edit Privacy' under the little pencil menu in your friend section: <br><img src='images/hide_friends.png'>",
+        "nextSteps": [
+            {
+                "prompt": "Phew, everything is gone now!",
+                "step": "yay"
+            },
+            {
+                "prompt": "I need to remove something else.",
+                "step": "remove"
+            }
+        ]
+    },
+    "yay": {
+        "description": "Hooray! Your Facebook is more safe and more secure. Plus you're an A+ Facebook privacy pro. We hope you spread the word and help your friends stay safe!",
+        "action": {
+            "type": "award",
+            "tweet": "I just audited my Facebook privacy settings and you won't believe what I found, jk, but really."
+        },
+        "nextSteps": [
+            {
+                "prompt": "To the Internet and beyond!",
+                "restart": "true"
+            }
+        ]
+    },
+    "aww": {
+        "description": "Sorry you don't want to check your Facebook settings. If someone is trying to dox you, it's probably one the the first places they'll look.",
+        "nextSteps": [
+            {
+                "prompt": "bye",
+                "restart": "true"
+            }
+        ]
+    }
+}

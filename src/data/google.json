@@ -1,0 +1,50 @@
+{
+    "start": {
+        "description": "Why Google yourself? While the horrible nazis, statists and thugs who harass us aren't like you and me, they can be in that they start out searching for something or someone by Googling them. So if they want to harass you, that may well be where they'll start. We recommend opening an incognito window to search, so you can see what a stranger would see.",
+        "nextSteps": [
+            {
+                "prompt": "Cool, Googling myself!",
+                "step": "google"
+            },
+            {
+                "prompt": "Googling yourself sounds like some weird euphemism and I refuse to do it.",
+                "step": "aww"
+            }
+        ]
+    },
+    "google": {
+        "description": "Cool, did you see anything interesting? I hope not. But make a list of everything you did see that you don't want your enemies to have access to. Maybe some of it is person-indexing sites that claim to have your address (they might actually). You can take those down by sending them requests, there are instructions on that later. You might have seen social media profiles; you can take those down using our instructions later on. You might see an account on a random service; you could try logging in and getting rid of it. Make a checklist of everything you want to try to get rid of, and let's try to get rid of some of those things together as we go through the rest of the tutorial!",
+        "nextSteps": [
+            {
+                "prompt": "Sweet, I made a list and shut down anything easy!",
+                "step": "yay"
+            },
+            {
+                "prompt": "This is a lot; I'll come back to it later.",
+                "step": "aww"
+            }
+        ]
+    },
+    "yay": {
+        "description": "You googled yourself!",
+        "action": {
+            "type": "award",
+            "tweet": "I started locking down my personal info by auditing my Google results!"
+        },
+        "nextSteps": [
+            {
+                "prompt": "I want to do something else now!",
+                "restart": "true"
+            }
+        ]
+    },
+    "aww": {
+        "description": "You didn't search for yourself",
+        "nextSteps": [
+            {
+                "prompt": "bye",
+                "restart": "true"
+            }
+        ]
+    }
+}

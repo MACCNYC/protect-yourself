@@ -1,0 +1,37 @@
+{
+    "start": {
+        "description": "The first thing",
+        "nextSteps": [
+            {
+                "prompt": "A good response",
+                "step": "yay"
+            },
+            {
+                "prompt": "A bad response",
+                "step": "aww"
+            }
+        ]
+    },
+    "yay": {
+        "description": "You did the thing!",
+        "action": {
+            "type": "award",
+            "tweet": "A thing to tweet"
+        },
+        "nextSteps": [
+            {
+                "prompt": "I want to do something else now!",
+                "restart": "true"
+            }
+        ]
+    },
+    "aww": {
+        "description": "You didn't do the thing",
+        "nextSteps": [
+            {
+                "prompt": "bye",
+                "restart": "true"
+            }
+        ]
+    }
+}
